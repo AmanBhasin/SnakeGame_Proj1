@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./snake_wallpaer.jpg);
+}
+
+#playArea{
+    position: absolute;
+    height: 80%;
+    width: 55%;
+    left: 3%;
+    top: 80px;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+
+.snake{
+    background-color: purple;
+}
+
+.food{
+    background-color: yellow;
+}
+
+.head{
+    background-color: red;
+}
+
+#scorebox{
+    position: absolute;
+    top: 10px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#hiscorebox{
+    position: absolute;
+    top: 65px;
+    right: 162px;
+    font-size: 39px;
+    font-weight: bold;
+}
